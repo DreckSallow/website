@@ -1,50 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import GithubIcon from "../components/icons/github.astro";
-import LinkedinIcon from "../components/icons/linkedin.astro";
-
-const iconsLinks = [
-	{ link: "https://github.com/DreckSallow", Icon: GithubIcon },
-	{ link: "https://www.linkedin.com/in/dikson-aranda/", Icon: LinkedinIcon },
-];
+import Nav from "../components/nav.svelte";
+import Sections from "../components/sections.svelte";
 ---
 
 <Layout title="Dikson's website">
-	<main class="h-screen w-screen bg-orange-100/10 flex p-12">
-		<section class="flex justify-between items-center gap-6 m-auto mx-4">
-			<div class="w-1/2">
-				<h5 class="text-neutral-400 font-medium text-base mb-1">
-					WELCOME TO MY WORLD
-				</h5>
-				<h1 class="text-6xl font-bold mb-5">Hi, I'm Dikson Aranda</h1>
-				<p class="text-lg">
-					I'm frontend developer, passionate about technology, and focused on
-					building better projects. Always for ways to expand my horizons and
-					challenge myself.
-				</p>
-				<div class="mt-4">
-					<h5 class="mb-2 text-neutral-400 font-medium">FIND ME</h5>
-					<ul class="flex gap-4">
-						<a href="https://github.com/DreckSallow" target="_blank">
-							<GithubIcon class="h-8 w-8" />
-						</a>
-						<a
-							href="https://www.linkedin.com/in/dikson-aranda/"
-							target="_blank"
-						>
-							<LinkedinIcon class="h-8 w-8" />
-						</a>
-					</ul>
-				</div>
-			</div>
-			<img src="https://avatars.githubusercontent.com/u/86900322?v=4" />
-		</section>
-		<nav class="fixed bottom-2 left-1/2 mx-auto rounded-md bg-blue-300">
-			<ul class="w-full h-full p-2 flex flex-row gap-1 text-white">
-				<li>Info</li>
-				<li>Education</li>
-				<li>Info</li>
-			</ul>
-		</nav>
+	<main
+		class="h-screen w-screen bg-orange-100/10 py-10 p-6 lg:py-10 lg:px-14 flex overflow-auto"
+	>
+		<Sections client:load />
+		<Nav client:load />
 	</main>
 </Layout>
