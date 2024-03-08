@@ -25,7 +25,7 @@
       building better projects. Always for ways to expand my horizons and
       challenge myself.
     </p>
-    <div class="mt-4">
+    <div class="mt-8">
       <h5 class="mb-2 text-brand font-medium">SKILLS</h5>
       <ul class="flex gap-3 flex-wrap">
         {#each SKILLS as sk}
