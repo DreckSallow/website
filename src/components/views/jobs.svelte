@@ -2,39 +2,55 @@
   const sections = [
     {
       title: "Liquid",
-      time: "Sep. 2023 - Now",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ut, voluptas sunt earum vero incidunt eos sed quibusdam natus. Doloribus dolore distinctio sunt quasi nostrum labore quae similique nemo neque.",
+      time: "Nov. 2023 - Now",
+      descs: [
+        "Desarrollé aplicaciones web usando Vue, Nuxt, Pinia, Tailwindcss. Con desplieges en GCP (Google console platform).",
+        "Colaboré en el diseño implementando mejoras o correciones para mejorar la experiencia de usuario.",
+      ],
     },
     {
       title: "Kimche",
-      time: "Apr. 2022 - Jun 2022",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ut, voluptas sunt earum vero incidunt eos sed quibusdam natus. Doloribus dolore distinctio sunt quasi nostrum labore quae similique nemo neque.",
+      time: "Jun. 2022 - Ago. 2022",
+      descs: [
+        "Añadí nuevas características a a la aplicación web considerando la visualización de datos (tablas,grapficos y barras de progreso).",
+        "Identificar y solucionar problemas, mejorando la funcionalidad y experiencia de usuario.",
+        "Uso de tecnologías web como React, React context, Cubejs.",
+      ],
     },
     {
       title: "SoyHenry",
       time: "Oct. 2021 - March 2022",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ut, voluptas sunt earum vero incidunt eos sed quibusdam natus. Doloribus dolore distinctio sunt quasi nostrum labore quae similique nemo neque.",
+      descs: [
+        "Egresado del bootcamp de SoyHenry, donde aprendí sobre desarrollo web, bajo el ecosistema de Javascript(frontend y backend.).",
+        "Como proyecto final desarollamos una tienda online de productos tech.",
+        "Habilidades aprendidas: React, Redux, NodeJs, PostgreSql, Html, CSS, Sequelize.",
+      ],
     },
-  ];
+  ].reverse();
 </script>
 
-<section class="w-full">
+<section class="w-full mb-6">
   <h1 class="text-2xl font-semibold border-b-4 border-brand inline mr-auto">
-    Experience
+    Trajectory
   </h1>
 
-  <h3 class="mt-5">A summarise of my experience on programing.</h3>
-  <ul class="timeline mx-auto mt-6 flex flex-col relative after:bg-txt/80">
+  <h3 class="mt-5">A summarise of my trajectory on programing.</h3>
+  <ul
+    class="timeline mx-auto mt-10 flex flex-col relative after:bg-txt/80 pb-6"
+  >
     {#each sections as sec}
-      <li class="relative after:bg-txt py-4 md:w-1/2">
-        <div class="src-only ind bg-brand/40 before:bg-brand before:w-6 mt-4" />
+      <li class="relative after:bg-txt px-4 md:w-1/2">
+        <div class="src-only ind bg-txt/40 before:bg-txt before:w-5 -mt-2" />
         <div class="rounded-2xl bg-white p-4 mx-6 shadow-lg">
           <h4 class="text-xl font-semibold">{sec.title}</h4>
           <span class="font-medium text-sm">{sec.time}</span>
-          <p class="mt-2 text-base">{sec.description}</p>
+          {#if sec.descs.length > 0}
+            <ul class="list-disc mx-5 mt-2.5 text-base">
+              {#each sec.descs as p}
+                <li class="mb-2">{p}</li>
+              {/each}
+            </ul>
+          {/if}
         </div>
       </li>
     {/each}
