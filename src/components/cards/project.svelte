@@ -2,16 +2,16 @@
   import Tag from "../ui/tag.svelte";
 
   export let title: string;
-  export let img: string | ImageMetadata;
+  export let img: string;
   export let imgAlt: string;
   export let desc: string;
   export let tags: string[] = [];
 </script>
 
-<article>
+<article class="overflow-hidden">
   <img
     loading="lazy"
-    decoding="asnyc"
+    decoding="async"
     src={img}
     alt={imgAlt}
     class="rounded-2xl h-[200px] w-full"
@@ -22,7 +22,7 @@
     <p class="text-base">{desc}</p>
     <ul class="mt-4">
       {#each tags as tag}
-        <Tag text={tag} className="mr-2" />
+        <Tag text={tag} className="mr-2 mb-2" />
       {/each}
     </ul>
   </div>
