@@ -6,9 +6,11 @@
   export let imgAlt: string;
   export let desc: string;
   export let tags: string[] = [];
+  export let githubLink: string;
+  export let webLink: string | undefined = undefined;
 </script>
 
-<article class="overflow-hidden">
+<article class="overflow-hidden h-full flex flex-col justify-between">
   <img
     loading="lazy"
     decoding="async"
@@ -25,5 +27,23 @@
         <Tag text={tag} className="mr-2 mb-2" />
       {/each}
     </ul>
+  </div>
+  <div class="flex justify-between gap-4 m-2 text-sm">
+    <a
+      class="flex-1 bg-txt/90 rounded-md px-2 py-1 text-white font-medium text-center"
+      href={githubLink}
+      target="_blank"
+    >
+      Github
+    </a>
+    {#if webLink}
+      <a
+        class="flex-1 bg-brand/90 rounded-lg px-2 py-1 text-center font-semibold"
+        href={webLink}
+        target="_blank"
+      >
+        Demo
+      </a>
+    {/if}
   </div>
 </article>
