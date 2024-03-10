@@ -37,7 +37,7 @@
       <!--<UserIcon className="w-7 h-7 fill-txt" />-->
     </button>
     <button class="cursor-pointer" on:click={() => page.set("jobs")}>
-      Experience
+      Trajectory
       <!--<BriefcaseIcon className="w-7 h-7 fill-txt" />-->
     </button>
     <button class="cursor-pointer" on:click={() => page.set("projects")}>
