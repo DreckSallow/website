@@ -18,7 +18,7 @@ export default {
 			keyframes: {
 				pager: {
 					"0%, 100%": { height: "0%" },
-					"50%": { height: "100%" }
+					"65%": { height: "100%" },
 				}
 			},
 			animation: {
