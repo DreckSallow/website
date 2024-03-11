@@ -23,7 +23,11 @@ export default {
 			},
 			animation: {
 				pager: "pager 2.5s ease-in-out"
-			}
+			},
+			boxShadow: ({ theme }) => ({
+				"outer": `0px 0px 15px 8px ${theme('colors.brand')}`
+			}),
+
 		},
 	},
 	plugins: [],
