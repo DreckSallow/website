@@ -1,4 +1,5 @@
 <script>
+  import { GithubIcon, LinkedinIcon, MailIcon } from "../icons";
   const SKILLS = [
     "Javascript",
     "Typescript",
@@ -8,7 +9,6 @@
     "Nextjs",
     "Nuxt",
     "Rust",
-    "Haskell",
   ];
 </script>
 
@@ -25,21 +25,50 @@
       building better projects. Always for ways to expand my horizons and
       challenge myself.
     </p>
-    <div class="mt-8">
-      <h5 class="mb-2 text-brand font-medium">SKILLS</h5>
-      <ul class="flex gap-3 flex-wrap">
+    <div class="mt-4">
+      <p class="text-base lg:text-lg text-justify lg:text-start">
+        These are my skills
+      </p>
+      <ul class="flex gap-3 flex-wrap mt-2">
         {#each SKILLS as sk}
           <li
-            class="before:content-['>'] before:text-blue-300 before:font-medium text-sm flex gap-1 text-sm"
+            class="before:content-['>'] before:text-blue-300 before:font-medium flex gap-1 text-base"
           >
             {sk}
           </li>
         {/each}
       </ul>
     </div>
+    <div class="mt-8 flex justify-between flex-col md:flex-row">
+      <a
+        download="cv"
+        href="/file"
+        class="rounded-md bg-txt text-white font-medium text-sm text-center px-5 py-2.5"
+      >
+        Download Cv
+      </a>
+      <div class="flex gap-2">
+        <a href="https://github.com/DreckSallow" class="underline">
+          <GithubIcon
+            className="w-9 h-9 fill-txt hover:scale-105 transition-transform duration-100"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/dikson-aranda/" class="underline">
+          <LinkedinIcon
+            className="w-9 h-9 fill-txt hover:scale-105 transition-transform duration-100"
+          />
+        </a>
+        <a href="mailto:arandadikson@gmail.com" class="underline">
+          <MailIcon
+            className="w-9 h-9 fill-txt hover:scale-105 transition-transform duration-100"
+          />
+        </a>
+      </div>
+    </div>
   </div>
   <img
     src="https://avatars.githubusercontent.com/u/86900322?v=4"
     alt="avatar"
+    class="rounded-3xl"
   />
 </section>
