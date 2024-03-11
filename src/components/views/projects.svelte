@@ -12,7 +12,7 @@
   <h1 class="text-2xl font-semibold border-b-4 border-brand inline mr-auto">
     Projects
   </h1>
-  <h3 class="mt-5">Show projects Open source I've created.</h3>
+  <h3 class="mt-5">Show open source projects I've created.</h3>
   <ul
     class="mt-8 grid gap-y-6 gap-x-4 pb-9 mx-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:mx-8"
   >
