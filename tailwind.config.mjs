@@ -8,10 +8,12 @@ export default {
 		extend: {
 			colors: {
 				"back": "#fafafa",
-				"back-2": "#f3f4f2",
-				// "brand":"#3e87ad"
 				"brand": "#33a7e0",
-				"txt": "#0c3445"
+				"heading":"#0c3445",
+				"txt": "#0c3445",
+				"dark-back":"#202021",
+				"dark-heading":"white",
+				"dark-txt":"#c8d8e8"
 			},
 			fontFamily: {
 				poppins: ["Poppins", ...defaultTheme.fontFamily.sans]

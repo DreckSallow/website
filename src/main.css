@@ -1,0 +1,25 @@
+@tailwind utilities;
+@tailwind components;
+
+@layer utilities{
+  .heading{
+    @apply text-heading dark:text-dark-heading;
+  }
+
+  .txt{
+    @apply text-txt dark:text-dark-txt;
+  }
+
+  .back-bg{
+    @apply bg-back dark:bg-dark-back;
+  }  
+}
+
+@layer components{
+  .page-main{
+    @apply h-screen w-screen overflow-auto back-bg txt;
+  }  
+  .social-icon{
+    @apply w-9 h-9 fill-txt hover:scale-105 transition-transform duration-100 dark:fill-brand/70;
+  }
+}
