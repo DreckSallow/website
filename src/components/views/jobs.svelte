@@ -36,7 +36,7 @@
     Trajectory
   </h1>
 
-  <h3 class="mt-5">A summarise of my trajectory on programing.</h3>
+  <h3 class="mt-5">A summarise of my trajectory in programing.</h3>
   <ul class="">
     {#each sections as sec}
       <TimeItem title={sec.title} subtitle={sec.time}>

@@ -3,6 +3,7 @@
   import QuippImg from "../../imgs/quipp-image.png";
   import FlixImg from "../../imgs/flix-markdown.webp";
   import FlowImg from "../../imgs/flow-img.gif";
+  import CountriesAppImg from "../../imgs/countries-app.webp";
   import PcshopImg from "../../imgs/pcshop-img.png";
 
   import CardProject from "../cards/project.svelte";
@@ -65,7 +66,7 @@
         imgAlt="Countries app image"
         desc="🌍 Website to search, filter and sort countries, obtained from the backend using a GaphQl API."
         tags={["Typescript", "Prisma", "NodeJs", "SvelteKit"]}
-        githubLink="https://github.com/DreckSallow/countries-app-svelte"
+        githubLink={CountriesAppImg.src}
         webLink="https://countries-app-svelte-6x6p-kadnr1vr8-dreck2003.vercel.app/"
       />
     </li>
