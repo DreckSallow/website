@@ -15,9 +15,17 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Dikson Aranda portfolio" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta
+			name="keywords"
+			content="portfolio, web, programador, frontend, dikson,"
+		/>
+		<meta name="og:title" content={title} />
+		<meta name="og:description" content="Dikson Aranda portfolio" />
+		<meta name="og:site_name" content="Dikson Aranda portfolio" />
+		<meta name="type" content="website" />
+		<link rel="icon" type="image/svg+xml" href="/brand-logo.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
