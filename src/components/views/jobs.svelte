@@ -4,28 +4,28 @@
   const sections = [
     {
       title: "Liquid",
-      time: "Nov. 2023 - Now",
+      time: "Nov. 2023 - Present",
       descs: [
-        "Desarrollé aplicaciones web usando Vue, Nuxt, Pinia, Tailwindcss. Con desplieges en GCP (Google console platform).",
-        "Colaboré en el diseño implementando mejoras o correciones para mejorar la experiencia de usuario.",
+        "I develop web applications using Vue, Nuxt, Pinia, and Tailwind CSS, with deployments on GCP (Google Cloud Platform).",
+        "I collaborate in the design, implementing improvements and corrections to enhance the user experince.",
       ],
     },
     {
       title: "Kimche",
       time: "Jun. 2022 - Ago. 2022",
       descs: [
-        "Añadí nuevas características a a la aplicación web considerando la visualización de datos (tablas,grapficos y barras de progreso).",
-        "Identificar y solucionar problemas, mejorando la funcionalidad y experiencia de usuario.",
-        "Uso de tecnologías web como React, React context, Cubejs.",
+        "I added new features to the web applications, considering data visualization (tables, graphics, and progress bars).",
+        "I identify and resolve problems, improving functioanality and user experience.",
+        "I used technologies like React, React Context and Cubejs.",
       ],
     },
     {
       title: "SoyHenry",
       time: "Oct. 2021 - March 2022",
       descs: [
-        "Egresado del bootcamp de SoyHenry, donde aprendí sobre desarrollo web, bajo el ecosistema de Javascript(frontend y backend.).",
-        "Como proyecto final desarollamos una tienda online de productos tech.",
-        "Habilidades aprendidas: React, Redux, NodeJs, PostgreSql, Html, CSS, Sequelize.",
+        "I graduated from Soy Henry's Bootcamp, where I learned about web development, under the javascript ecosystem(frontend and backend).",
+        "As a final project, we developed an online store for tech products.",
+        "Skills learned: React, Redux, NodeJs, PostgreSql, Html, CSS, Sequelize.",
       ],
     },
   ].reverse();
