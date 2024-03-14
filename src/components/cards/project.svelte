@@ -1,5 +1,7 @@
 <script lang="ts">
+  import Heading from "../ui/heading.svelte";
   import Tag from "../ui/tag.svelte";
+  import Text from "../ui/text.svelte";
 
   export let title: string;
   export let img: string;
@@ -20,8 +22,10 @@
     height="200px"
   />
   <div class="p-2">
-    <h4 class="font-semibold text-xl mb-2">{title}</h4>
-    <p class="text-base">{desc}</p>
+    <Heading size="subtitle">
+      {title}
+    </Heading>
+    <Text>{desc}</Text>
     <ul class="mt-4">
       {#each tags as tag}
         <Tag text={tag} className="mr-2 mb-2" />
@@ -30,7 +34,7 @@
   </div>
   <div class="flex justify-between gap-4 m-2 text-sm">
     <a
-      class="flex-1 bg-txt/90 rounded-md px-2 py-1 text-white font-medium text-center"
+      class="flex-1 bg-txt/90 rounded-md px-2 py-1 text-white font-medium text-center dark:bg-brand/70"
       href={githubLink}
       target="_blank"
     >
@@ -38,7 +42,7 @@
     </a>
     {#if webLink}
       <a
-        class="flex-1 bg-brand/90 rounded-lg px-2 py-1 text-center font-semibold"
+        class="flex-1 bg-brand/90 rounded-lg px-2 py-1 text-center font-semibold dark:bg-white dark:text-dark-back"
         href={webLink}
         target="_blank"
       >

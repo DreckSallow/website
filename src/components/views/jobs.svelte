@@ -1,5 +1,7 @@
 <script lang="ts">
   import TimeItem from "../time-item.svelte";
+  import Heading from "../ui/heading.svelte";
+  import Text from "../ui/text.svelte";
 
   const sections = [
     {
@@ -32,18 +34,19 @@
 </script>
 
 <section class="w-full mb-6">
-  <h1 class="text-2xl font-semibold border-b-4 border-brand inline mr-auto">
-    Trajectory
-  </h1>
-
-  <h3 class="mt-5">A summarise of my trajectory in programing.</h3>
-  <ul class="">
+  <Heading underlined style="inline">Trajectory</Heading>
+  <Text as="p" style="mt-5">A summarise of my trajectory in programing.</Text>
+  <ul class="pb-6">
     {#each sections as sec}
       <TimeItem title={sec.title} subtitle={sec.time}>
         {#if sec.descs.length > 0}
           <ul class="list-disc mx-5 mt-2.5 text-base text-balance">
             {#each sec.descs as p}
-              <li class="mb-2">{p}</li>
+              <li class="mb-2">
+                <Text as="span">
+                  {p}
+                </Text>
+              </li>
             {/each}
           </ul>
         {/if}
