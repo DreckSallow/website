@@ -13,7 +13,8 @@ export default {
 				"txt": "#0c3445",
 				"dark-back":"#202021",
 				"dark-heading":"white",
-				"dark-txt":"#c8d8e8"
+				// "dark-txt":"#c8d8e8"
+				"dark-txt":"#f2fafc"
 			},
 			fontFamily: {
 				poppins: ["Poppins", ...defaultTheme.fontFamily.sans]
