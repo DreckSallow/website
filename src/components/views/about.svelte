@@ -41,8 +41,8 @@
     </div>
     <div class="mt-8 flex justify-between">
       <a
-        download="cv"
-        href="/file"
+        download
+        href="/Dikson-Aranda-Frontend.pdf"
         class="rounded-md bg-txt text-white font-medium text-sm text-center px-5 py-2.5 dark:bg-brand/70"
       >
         Download CV
@@ -63,6 +63,6 @@
   <img
     src="https://avatars.githubusercontent.com/u/86900322?v=4"
     alt="avatar"
-    class="rounded-3xl bg-green-200 w-[70%] aspect-square lg:w-[45%]"
+    class="rounded-3xl w-[70%] aspect-square lg:w-[45%]"
   />
 </section>
