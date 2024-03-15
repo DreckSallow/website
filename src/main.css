@@ -22,4 +22,15 @@
   .social-icon{
     @apply w-9 h-9 fill-txt hover:scale-105 transition-transform duration-100 dark:fill-brand/70;
   }
+
+  .nav-list{
+    @apply w-full h-full py-2 px-3.5 flex flex-row gap-3 text-txt font-medium text-base;
+    & button{
+      @apply cursor-pointer dark:text-white px-2 py-0.5 rounded-full;
+      transition: background-color 100ms ease;
+      &:hover, &.selected{
+        @apply bg-brand/40;
+      }
+    }
+  }
 }

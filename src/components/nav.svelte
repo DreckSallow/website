@@ -26,29 +26,20 @@
 </script>
 
 <nav
-  class="m-auto rounded-full bg-brand/20 fixed bottom-2 left-1/2 -translate-x-1/2 backdrop-blur-lg dark:bg-[#2d3748]"
+  class="rounded-full bg-brand/20 fixed bottom-2 left-1/2 -translate-x-1/2 backdrop-blur-lg dark:bg-[#2d3748]"
 >
-  <div
-    class="w-full h-full py-2 px-3.5 flex flex-row gap-4 text-txt font-medium text-base"
-    role="list"
-  >
-    <button
-      class="cursor-pointer dark:text-white"
-      on:click={() => page.set("info")}
-    >
+  <div class="nav-list" role="list">
+    <button on:click={() => page.set("info")} class:selected={$page == "info"}>
       About
       <!--<UserIcon className="w-7 h-7 fill-txt" />-->
     </button>
-    <button
-      class="cursor-pointer dark:text-white"
-      on:click={() => page.set("jobs")}
-    >
+    <button on:click={() => page.set("jobs")} class:selected={$page == "jobs"}>
       Trajectory
       <!--<BriefcaseIcon className="w-7 h-7 fill-txt" />-->
     </button>
     <button
-      class="cursor-pointer dark:text-white"
       on:click={() => page.set("projects")}
+      class:selected={$page == "projects"}
     >
       Projects
       <!--<BulbIcon className="w-7 h-7 fill-txt" />-->
