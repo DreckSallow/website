@@ -22,7 +22,7 @@
         title="Melody"
         img={MelodyImg.src}
         imgAlt="Countries app image"
-        desc="🎼 Music Player for the terminal (TUI). Listen music and navigate between sections using the kewyboard."
+        desc="🎼 Music Player for the terminal (TUI). Listen music and navigate between sections using the keyboard."
         tags={["Rust"]}
         githubLink="https://github.com/DreckSallow/melody"
       />
@@ -43,7 +43,7 @@
         title="Flix"
         img={FlixImg.src}
         imgAlt="Flix project image"
-        desc="🖥️ A powerful, versatile adn Open Source desktop aplication designed for use the anki decks and make notes"
+        desc="🖥️ A powerful, versatile and Open Source desktop aplication designed for use the Anki decks and make notes."
         tags={["Rust", "Tauri", "Vue", "Astro", "UnoCss"]}
         githubLink="https://github.com/DreckSallow/flix"
         webLink="https://flixdev.netlify.app/"
@@ -75,7 +75,7 @@
         title="Pcshop"
         img={PcshopImg.src}
         imgAlt="Pcshop project image"
-        desc="🏪 SoyHenry final project. Ecommerce online aboiut tech products."
+        desc="🏪 SoyHenry final project. Ecommerce online about tech products."
         tags={["Nodejs", "React", "Redux"]}
         githubLink="https://github.com/nmacenco/Ecommerce-Project"
         webLink="https://pcshop-ecommerce-project.vercel.app/"

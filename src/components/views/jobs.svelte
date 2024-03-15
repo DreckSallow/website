@@ -8,8 +8,8 @@
       title: "Liquid",
       time: "Nov. 2023 - Present",
       descs: [
-        "I develop web applications using Vue, Nuxt, Pinia, and Tailwind CSS, with deployments on GCP (Google Cloud Platform).",
-        "I collaborate in the design, implementing improvements and corrections to enhance the user experince.",
+        "I developed web applications using Vue, Nuxt, Pinia, and Tailwind CSS, with deployments on GCP (Google Cloud Platform).",
+        "I collaborate with the design team to improve the workflow and user experience",
       ],
     },
     {
@@ -17,7 +17,7 @@
       time: "Jun. 2022 - Ago. 2022",
       descs: [
         "I added new features to the web applications, considering data visualization (tables, graphics, and progress bars).",
-        "I identify and resolve problems, improving functioanality and user experience.",
+        "I identified and resolved problems, improving functioanality and user experience.",
         "I used technologies like React, React Context and Cubejs.",
       ],
     },
